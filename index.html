@@ -7,7 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="input-box" type="number" min="1">
+    <input type="range" min="0" max="360" value="180" class="slider" id="h-range">
+    Step value H:<input id="shade-box-h" type="number" value="0">
+    <p>H: <span id="h-value"></span></p>
+    <input type="range" min="0" max="100" value="50" class="slider" id="s-range">
+    Step value S:<input id="shade-box-s" type="number" value="0">
+    <p>S: <span id="s-value"></span></p>
+    <input type="range" min="0" max="100" value="50" class="slider" id="l-range">
+    Step value L:<input id="shade-box-l" type="number" value="0">
+    <p>L: <span id="l-value"></span></p>
+      
+
+    Number of steps:<input id="input-box" type="number" min="1">
+    
     <button id="go-button" onclick="makeDivs();">GO!</button>
     <button id="remove-btn" onclick="removeAll();">Remove All!</button>
     <div id="main"></div>
